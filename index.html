@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    
+</head>
+<body>
+    <header>
+        <h1>Vanilla Javascript</h1>
+    </header>
+    <section class="todoList">
+         <form >
+             <input type="text " placeholder="Add List..." id="addInput">
+             <button id="addBtn">Add</button>
+         </form>
+         <div class="error"></div>
+         <div id="list">
+             
+         </div>
+    </section>
+    <section class="searchInput">
+        <div class="searchContact">
+        <div class="formSearch">
+            <i class="fas fa-search"></i>
+         <input type="text" id="searchInput" placeholder="Search...">
+         
+        </div>
+        <ul id="searchList">
+            <h3>A</h3>
+            <li class="contact"><a href="#">Allan</a></li>
+            <li class="contact"><a href="#">Andrie</a></li>
+            <li class="contact"><a href="#">Andrew<a></li>
+            <h3>B</h3>
+            <li class="contact"><a href="#">Bryan</a></li>
+            <li class="contact"><a href="#">Boy</a></li>
+            <li class="contact"><a href="#">Ben</a></li>
+            <li class="contact"><a href="#">Belly</a></li>
+            <h3>C</h3>
+            <li class="contact"><a href="#">Carlo</a></li>
+            <li class="contact"><a href="#">Carmela</a></li>
+            <li class="contact"><a href="#">Carol</a></li>
+            <li class="contact"><a href="#">Candy</a></li>
+
+        </ul>
+    </section>
+    <section class="bookSec">
+     <h1> My BookList</h1>
+     <form >
+      <label for="title">Title</label>
+      <br>
+      <input type="text" id="title" placeholder="Add title.." >   
+       <br>
+    <label for="author">Author</label>
+    <br>
+      <input type="text" id="author" placeholder="Add author.."  >
+      <br>
+      <label for="isbn">ISBN</label>
+      <br>
+      <input type="text" id="isbn" placeholder="Add isbn.." >
+       <br>
+      <input type="submit" value="Submit" id="submitBook">
+     </form>
+     <table>
+         <thead>
+             <tr>
+             <th>Title</th>
+             <th>Author</th>
+             <th>ISBN</th>
+             </tr>
+         </thead>
+         <tbody id="bookBody">
+            
+         </tbody>
+
+     </table>
+    </section>
+
+    <footer>
+        <div>
+        <p>All Right Reserve @2021</p>
+        <p>author:Jonathan Digay</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

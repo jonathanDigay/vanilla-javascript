@@ -1,0 +1,220 @@
+
+:root{--black: #04080fff;
+--white: #ffff;
+--blue-green: #185f77ff;
+--gold: #eec584ff;
+--dark-gold: #b49a67ff;
+}
+*,h1,body{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+header{
+    display:grid;
+    place-items:center;
+    height:80px;
+    background-color: var(--gold);
+}
+ul{
+    list-style:none;
+}
+.todoList{
+    width:90vw;
+    margin:auto;
+    min-height:100px;
+/* 
+   layout  */
+    display:grid;
+    place-items:center;
+
+}
+.todoList form{
+ width:80%;
+ margin:auto;
+ margin:10px 0 10px;
+ height:30px;
+
+ /* //layout */
+display:flex;
+}
+form input{
+    flex:1;
+    margin-right:5px;
+    outline:none;
+}
+form button{
+    padding:5px;
+    background: var(--blue-green);
+    color:white;
+    border:none;
+    outline:none;
+}
+form button:hover{
+    background:var(--dark-gold);
+    cursor:pointer;
+}
+
+#list{
+   
+    width:90%;
+    min-height:10px;
+}
+.item{
+    background:var(--blue-green);
+    width:100%;
+    height:30px;
+    margin:10px 0 10px;
+    padding-left:10px;
+    position:relative;
+
+
+    /* layout */
+  display:flex;
+  align-items:center;
+}
+.item button{
+    width:30px;
+    margin-right:5px;
+    border:none;
+    outline:none;
+
+}
+.item button:hover{
+    background:var(--dark-gold);
+}
+.item .delcheck{
+   position:absolute;
+   right:0;
+}
+.item a{
+    color:var(--gold);
+}
+.fa-times{
+    pointer-events: none;
+}
+
+
+
+.searchInput{
+    display:flex;
+    justify-content:center;
+}
+.searchContact{
+    width:80%;
+}
+.searchContact .formSearch{
+    display:flex;
+    width:100%;
+    position:relative;
+}
+.searchContact i{
+    position:absolute;
+    
+   
+}
+
+.searchContact input{
+  flex:1;
+   height:30px;
+   margin-bottom:10px;
+   padding-left:20px;
+   outline:none;
+
+}
+
+#searchList{
+    border:1px solid black;
+}
+#searchList h3{
+    background:var(--blue-green);
+     display:grid;
+     place-items:center;
+    margin-bottom:3px;
+    height:40px;
+}
+#searchList li{
+    width:100%;
+    background:var(--gold);
+    margin:3px 0 0;
+    padding-left:5px;
+}
+#searchList li:hover{
+    background:var(--dark-gold);
+    cursor:pointer; 
+}
+#searchList li a{
+    text-decoration:none;
+    color:black;
+   
+
+}
+
+/*BookSec*/
+.bookSec{
+     border:1px solid black;
+     width:90%;
+     margin:auto;
+     margin-top:20px;
+     margin-bottom:100px;
+     padding:10px 20px 
+}
+.bookSec h1{
+    text-align:center;
+    font-size:2rem;
+}
+.bookSec form{
+    border:1px solid black;
+    padding:0 10px;
+    margin-bottom:20px;
+}
+.bookSec form label{
+    font-size:1.5rem;
+}
+.bookSec form input{
+    width:100%;
+    min-height:30px;
+    margin:10px 0;
+    padding:0 10px ;
+}
+.bookSec input[type="submit"]{
+  background:var(--blue-green);
+  border:none;
+  font-size:1.2rem;
+  padding:10px 0  10px;
+}
+.bookSec input[type="submit"]:hover{
+    background:var(--dark-gold);
+}
+table{
+    width:100%; 
+    text-align:left;
+    border-collapse: collapse;
+   
+}
+table thead {
+    background:var(--blue-green);
+    color:white;
+ 
+}
+table thead tr th{
+    height:30px;
+    padding-left:10px;
+}
+table tbody{
+    background:var(--gold);
+    margin:3px 0 3px;
+}
+table tbody tr td{
+    margin:3px 0 3px;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    color:white;
+    height:80px;
+  
+    display:grid;
+    place-items:center;
+}
